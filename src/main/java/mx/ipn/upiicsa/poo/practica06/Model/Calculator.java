@@ -1,4 +1,4 @@
-package mx.ipn.upiicsa.poo.practica06.Calculator;
+package mx.ipn.upiicsa.poo.practica06.Model;
 
 public class Calculator {
     // Método para sumar dos números

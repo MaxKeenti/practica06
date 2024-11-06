@@ -1,14 +1,14 @@
-package mx.ipn.upiicsa.poo.practica06.UI;
+package mx.ipn.upiicsa.poo.practica06.Controller;
 
 import java.util.Scanner;
 
-import mx.ipn.upiicsa.poo.practica06.Calculator.*;
+import mx.ipn.upiicsa.poo.practica06.Model.ScientificCalculator;
 
-public class Menu {
+public class MenuController {
     private ScientificCalculator calculator;
     private Scanner scanner;
 
-    public Menu() {
+    public MenuController() {
         this.calculator = new ScientificCalculator();
         this.scanner = new Scanner(System.in);
     }

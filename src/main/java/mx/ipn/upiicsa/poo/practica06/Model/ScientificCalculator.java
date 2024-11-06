@@ -1,4 +1,4 @@
-package mx.ipn.upiicsa.poo.practica06.Calculator;
+package mx.ipn.upiicsa.poo.practica06.Model;
 
 public class ScientificCalculator extends Calculator{
     // Redondea hacia abajo el valor

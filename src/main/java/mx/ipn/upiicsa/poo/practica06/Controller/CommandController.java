@@ -1,8 +1,8 @@
-package mx.ipn.upiicsa.poo.practica06.UI;
+package mx.ipn.upiicsa.poo.practica06.Controller;
 
-import mx.ipn.upiicsa.poo.practica06.Calculator.*;
+import mx.ipn.upiicsa.poo.practica06.Model.ScientificCalculator;
 
-public class CommandControl {
+public class CommandController {
     
     // Ejecuta el modo comando en base a los argumentos dados
     public static void modoComando(String[] args) {
