@@ -3,8 +3,8 @@ package mx.ipn.upiicsa.poo.practica06.View;
 import javax.swing.*;
 
 public class ScientificButtonPanel extends ButtonPanel {
-    public ScientificButtonPanel(DisplayPanel displayPanel) {
-        super(displayPanel); // Llama al constructor de la clase padre
+    public ScientificButtonPanel(DisplayPanel displayPanel, MainFrame mainFrame) {
+        super(displayPanel, mainFrame); // Llama al constructor de la clase padre
 
         // Añadimos botones científicos
         String[] scientificButtons = {"x²", "x³", "xʸ", "eˣ", "10ˣ", 

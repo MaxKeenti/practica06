@@ -17,6 +17,6 @@ public abstract class CalculatorBase {
         this.operator = "";
     }
 
-    // Método común para calcular el resultado
-    public abstract double calculate() throws ArithmeticException;
+    // Método abstracto que calculará la expresión
+    public abstract double calculate(String expression);
 }

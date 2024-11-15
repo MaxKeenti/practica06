@@ -1,25 +1,21 @@
 package mx.ipn.upiicsa.poo.practica06.Model;
 
+import net.objecthunter.exp4j.Expression;
+import net.objecthunter.exp4j.ExpressionBuilder;
+import net.objecthunter.exp4j.tokenizer.UnknownFunctionOrVariableException;
+
 public class BasicCalculator extends CalculatorBase {
 
     @Override
-    public double calculate() {
-        switch (operator) {
-            case "+":
-                return operand;
-            case "-":
-                return -operand;
-            case "*":
-                return operand;
-            case "/":
-                if (operand == 0) {
-                    throw new ArithmeticException("División por cero");
-                }
-                return operand;
-            case "%":
-                return operand / 100;
-            default:
-                return 0;
+    public double calculate(String expression) {
+        try {
+            // Crear y evaluar la expresión usando Exp4j
+            Expression exp = new ExpressionBuilder(expression).build();
+            return exp.evaluate();
+        } catch (ArithmeticException | UnknownFunctionOrVariableException e) {
+            System.out.println("Error al evaluar la expresión: " + expression);
+            e.printStackTrace();
+            return 0;
         }
     }
 }
