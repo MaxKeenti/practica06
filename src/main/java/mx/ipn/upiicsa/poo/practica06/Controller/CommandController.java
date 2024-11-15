@@ -1,12 +1,12 @@
 package mx.ipn.upiicsa.poo.practica06.Controller;
 
-import mx.ipn.upiicsa.poo.practica06.Model.ScientificCalculator;
+import mx.ipn.upiicsa.poo.practica06.Model.CommandScientificCalculator;
 
 public class CommandController {
     
     // Ejecuta el modo comando en base a los argumentos dados
     public static void modoComando(String[] args) {
-        ScientificCalculator calculator = new ScientificCalculator();
+        CommandScientificCalculator calculator = new CommandScientificCalculator();
 
         if (args.length == 0) {
             System.out.println("Error: No se proporcionaron argumentos. Use -help para ver las opciones.");
@@ -32,7 +32,7 @@ public class CommandController {
     }
 
     // Ejecuta la operación seleccionada e imprime el resultado
-    private static void executeOperation(ScientificCalculator calculator, String operacion, double a, double b) {
+    private static void executeOperation(CommandScientificCalculator calculator, String operacion, double a, double b) {
         switch (operacion) {
             case "-s":
                 System.out.println("Resultado de la suma: " + calculator.suma(a, b));

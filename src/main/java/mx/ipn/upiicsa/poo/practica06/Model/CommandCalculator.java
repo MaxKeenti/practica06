@@ -1,6 +1,6 @@
 package mx.ipn.upiicsa.poo.practica06.Model;
 
-public class Calculator {
+public class CommandCalculator {
     // Método para sumar dos números
     public double suma(double a, double b) {
         return a + b;

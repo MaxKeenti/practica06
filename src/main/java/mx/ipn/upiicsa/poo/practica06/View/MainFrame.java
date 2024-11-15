@@ -12,7 +12,7 @@ public class MainFrame {
         frame = new JFrame("Calculator");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setResizable(false);
-        frame.setSize(new Dimension(800, 600));
+        frame.setSize(new Dimension(200, 400));
         
         displayPanel = new DisplayPanel();
         buttonPanel = new ButtonPanel(displayPanel);
